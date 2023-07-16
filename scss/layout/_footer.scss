@@ -1,0 +1,126 @@
+.footer {
+  background-color: $dark-green;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  a {
+    color: $white-color;
+    &:hover {
+      color: $light-coral;
+      transition: 0.3s;
+    }
+  }
+  .footer__wrapper {
+    display: flex;
+    .footer__nav {
+      display: flex;
+      flex-direction: column;
+      margin-right: 12.5em;
+      img {
+        margin-bottom: 2rem;
+      }
+      .footer__nav__pages {
+        display: flex;
+        gap: 4rem;
+      }
+    }
+  }
+}
+
+.footer__contact {
+  width: 445px;
+  opacity: 60%;
+}
+
+.footer__socials {
+  text-align: right;
+  margin-left: auto;
+  ul {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 5rem;
+  }
+  p {
+    opacity: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    .footer__wrapper {
+      flex-wrap: wrap;
+      display: flex;
+
+      .footer__nav {
+        margin-bottom: 3.4rem;
+        margin-right: auto;
+        .footer__logo {
+          img {
+            width: 97px;
+            height: 24px;
+            margin-bottom: 5.3rem;
+          }
+        }
+
+        .footer__nav__pages {
+          gap: 2.4rem;
+        }
+      }
+      .footer__contact {
+        width: 28rem;
+        text-align: right;
+      }
+
+      .footer__socials {
+        display: flex;
+        gap: 32rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 635px) {
+  .footer {
+    .footer__wrapper {
+      flex-direction: column;
+      margin: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        .footer__logo {
+          img {
+            width: 96px;
+            height: 24px;
+            margin-bottom: 2.4rem;
+          }
+        }
+
+        .footer__nav__pages {
+          display: flex;
+          gap: 2.4rem;
+          margin-bottom: 2.4rem;
+        }
+      }
+      .footer__contact {
+        width: 28rem;
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .footer__socials {
+        display: flex;
+        margin-left: 0;
+        gap: 1.6rem;
+        margin-bottom: 1.6rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
