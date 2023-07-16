@@ -919,29 +919,29 @@ main {
 }
 @media screen and (max-width: 635px) {
   .section__manage {
-    display: flex;
     flex-direction: column;
     padding: 10rem 9.8rem;
+  }
+  .section__manage .manage__top {
+    display: flex;
+    flex-direction: column;
   }
   .section__manage .manage__top hr {
     margin-bottom: 3.2rem;
   }
   .section__manage .manage__top h2 {
-    width: 24rem;
-    height: 16rem;
     font-size: 3.2rem;
     line-height: 1;
     margin-bottom: 6.4rem;
   }
-  .section__manage .manage__cards-wrapper {
-    padding-top: 0;
+  .section__manage .manage__top p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+  .section__manage .manage__cards-wrapper .manage__cards-wrapper__card {
     display: flex;
     flex-direction: column;
-  }
-  .section__manage .manage__section__image {
-    position: relative;
-    top: -92.2rem;
-    left: 21rem;
+    text-align: center;
   }
   .section__bottom__container {
     padding-top: 8.3rem;
@@ -957,5 +957,13 @@ main {
     height: 64px;
     font-size: 3.2rem;
     line-height: 1;
+  }
+  .delivering__section__container h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+  .delivering__section__container .story p {
+    font-size: 1.5rem;
+    line-height: 1.7;
   }
 }/*# sourceMappingURL=style.css.map */
